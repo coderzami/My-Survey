@@ -28,7 +28,7 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.6"
+                android:layout_weight="0.5"
                 android:hint="Add Ordinate"
                 android:inputType="numberDecimal|numberSigned"
                 android:id="@+id/addOrdinateId"/>
@@ -41,7 +41,7 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
+                android:layout_weight="0.3"
                 android:text="Reset"
                 android:id="@+id/resetOrdinateBtn"/>
 

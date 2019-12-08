@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MidOrdinate"></activity>
+        <activity android:name=".RiseFall"></activity>
+        <activity android:name=".MidOrdinate" />
         <activity android:name=".Simpson" />
         <activity android:name=".AverageOrdinate" />
         <activity android:name=".MainActivity">
