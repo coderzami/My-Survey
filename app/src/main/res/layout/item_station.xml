@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:id="@+id/layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:id="@+id/name"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="distance"
+            android:id="@+id/distance"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="reading"
+            android:id="@+id/reading"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.22"
+            android:layout_height="wrap_content"
+            android:text="R.L"
+            android:id="@+id/reducedLevel"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.18 "
+            android:layout_height="wrap_content"
+            android:text="H of I"
+            android:id="@+id/heightOfInstrument"/>
+
+    </LinearLayout>
+
+</LinearLayout>

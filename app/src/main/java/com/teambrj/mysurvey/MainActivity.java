@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button mAvgOrdinateBtn;
     Button mSimpsonBtn;
     Button mMidOrdinateBtn;
+    Button mLineOfCollimationBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +25,12 @@ public class MainActivity extends AppCompatActivity {
         mAvgOrdinateBtn = findViewById(R.id.avgOrdinate);
         mMidOrdinateBtn = findViewById(R.id.midOrdinateBtnId);
         mSimpsonBtn = findViewById(R.id.simpsonBtnId);
+        mLineOfCollimationBtn = findViewById(R.id.lineOfCollimationBtnId);
+
+
         mAvgOrdinateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 SendToAverageOrdinate();
             }
         });
@@ -46,9 +49,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mLineOfCollimationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SentToLineOfCollimation();
+            }
+        });
 
 
 
+
+    }
+
+    private void SentToLineOfCollimation() {
+        Intent intent =new Intent(this,LineOfCollimation.class);
+        startActivity(intent);
     }
 
     private void SendToMidOrdinate() {

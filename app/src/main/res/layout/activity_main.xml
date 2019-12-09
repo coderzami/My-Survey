@@ -29,6 +29,12 @@
             android:text="Simpson's Rule"
             android:id="@+id/simpsonBtnId"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Line of collimation"
+            android:id="@+id/lineOfCollimationBtnId"/>
+
 
     </LinearLayout>
 
