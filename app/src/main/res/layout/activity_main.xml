@@ -39,13 +39,6 @@
             android:layout_height="wrap_content"
             android:text="Rise and Fall"
             android:id="@+id/riseAndFallBtnId"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Survey Group 3"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
-            android:id="@+id/sponsor"/>
 
 
     </LinearLayout>
