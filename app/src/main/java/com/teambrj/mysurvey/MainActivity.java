@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button mSimpsonBtn;
     Button mMidOrdinateBtn;
     Button mLineOfCollimationBtn;
+    Button mRiseAndFallBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         mMidOrdinateBtn = findViewById(R.id.midOrdinateBtnId);
         mSimpsonBtn = findViewById(R.id.simpsonBtnId);
         mLineOfCollimationBtn = findViewById(R.id.lineOfCollimationBtnId);
+        mRiseAndFallBtn = findViewById(R.id.riseAndFallBtnId);
+        TextView mSponsor = findViewById(R.id.sponsor);
 
 
         mAvgOrdinateBtn.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +56,13 @@ public class MainActivity extends AppCompatActivity {
         mLineOfCollimationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SentToLineOfCollimation();
+                SendToLineOfCollimation();
+            }
+        });
+        mRiseAndFallBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SendToRiseAndFall();
             }
         });
 
@@ -61,7 +71,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void SentToLineOfCollimation() {
+    private void SendToRiseAndFall() {
+        Intent intent =new Intent(this,RiseAndFall.class);
+        startActivity(intent);
+    }
+
+    private void SendToLineOfCollimation() {
         Intent intent =new Intent(this,LineOfCollimation.class);
         startActivity(intent);
     }
