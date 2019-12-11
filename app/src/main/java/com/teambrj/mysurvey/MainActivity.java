@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void Hudai(){
-        
+
     }
 
     public static void hideKeyboard(Activity activity) {
