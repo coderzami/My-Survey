@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mSimpsonBtn = findViewById(R.id.simpsonBtnId);
         mLineOfCollimationBtn = findViewById(R.id.lineOfCollimationBtnId);
         mRiseAndFallBtn = findViewById(R.id.riseAndFallBtnId);
-git
+
 
 
         mAvgOrdinateBtn.setOnClickListener(new View.OnClickListener() {
