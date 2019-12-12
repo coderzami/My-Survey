@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RiseAndFall"></activity>
+        <activity android:name=".tacheometry.CalculateKandC"></activity>
+        <activity android:name=".tacheometry.TacheometricSurvey" />
+        <activity android:name=".RiseAndFall" />
         <activity android:name=".LineOfCollimation" />
         <activity android:name=".RiseFall" />
         <activity android:name=".MidOrdinate" />

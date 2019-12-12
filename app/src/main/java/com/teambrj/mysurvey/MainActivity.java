@@ -10,6 +10,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.teambrj.mysurvey.tacheometry.TacheometricSurvey;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button mMidOrdinateBtn;
     Button mLineOfCollimationBtn;
     Button mRiseAndFallBtn;
+    Button mTacheometryBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mSimpsonBtn = findViewById(R.id.simpsonBtnId);
         mLineOfCollimationBtn = findViewById(R.id.lineOfCollimationBtnId);
         mRiseAndFallBtn = findViewById(R.id.riseAndFallBtnId);
+        mTacheometryBtn = findViewById(R.id.tacheometryBtnId);
 
 
 
@@ -66,9 +70,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mTacheometryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SendToTacheometricSurvey();
+            }
+        });
 
 
 
+
+    }
+
+    private void SendToTacheometricSurvey() {
+        Intent intent =new Intent(this, TacheometricSurvey.class);
+        startActivity(intent);
     }
 
     private void SendToRiseAndFall() {

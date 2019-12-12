@@ -40,6 +40,12 @@
             android:text="Rise and Fall"
             android:id="@+id/riseAndFallBtnId"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tacheometric Survey"
+            android:id="@+id/tacheometryBtnId"/>
+
 
     </LinearLayout>
 

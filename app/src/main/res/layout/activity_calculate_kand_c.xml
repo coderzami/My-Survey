@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".tacheometry.CalculateKandC">
+
+
+    <EditText
+        android:id="@+id/smallDistanceID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Smaller Distance" />
+
+    <EditText
+        android:id="@+id/smallInterceptID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Smaller Intercept" />
+    <EditText
+        android:id="@+id/bigDistanceID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Bigger Distance" />
+
+    <EditText
+        android:id="@+id/bigInterceptID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Bigger Intercept" />
+
+    <Button
+        android:id="@+id/calculateKCBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate K and C" />
+
+    <TextView
+        android:id="@+id/resultKCtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:maxLines="10"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
