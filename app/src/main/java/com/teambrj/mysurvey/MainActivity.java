@@ -98,9 +98,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private void Hudai(){
-
-    }
 
     public static void hideKeyboard(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
